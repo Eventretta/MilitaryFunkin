@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="new gren beatiful and better than the 3d one.png"><SubTexture name="Gren NEW idle0000" x="0" y="0" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW idle0001" x="821" y="0" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW idle0002" x="1642" y="0" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW down0000" x="2463" y="0" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW down0001" x="0" y="1173" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW down0002" x="821" y="1173" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW down0003" x="1642" y="1173" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0000" x="2463" y="1173" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0001" x="0" y="2346" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0002" x="821" y="2346" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0003" x="1642" y="2346" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0004" x="2463" y="2346" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW left0005" x="0" y="3519" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW right0000" x="821" y="3519" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW right0001" x="1642" y="3519" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW right0002" x="2463" y="3519" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW right0003" x="0" y="4692" width="821" height="1173" frameX="0" frameY="0" frameWidth="821" frameHeight="1173" />
+<SubTexture name="Gren NEW up thing lol lmao xd sskasljdslkajdlkfdjhdskhdfcnlA0000" x="821" y="4692" width="821" height="1365" frameX="0" frameY="0" frameWidth="821" frameHeight="1365" />
+<SubTexture name="Gren NEW up thing lol lmao xd sskasljdslkajdlkfdjhdskhdfcnlA0001" x="1642" y="4692" width="821" height="1365" frameX="0" frameY="0" frameWidth="821" frameHeight="1365" />
+<SubTexture name="Gren NEW up thing lol lmao xd sskasljdslkajdlkfdjhdskhdfcnlA0002" x="2463" y="4692" width="821" height="1365" frameX="0" frameY="0" frameWidth="821" frameHeight="1365" />
+<SubTexture name="Gren NEW up thing lol lmao xd sskasljdslkajdlkfdjhdskhdfcnlA0003" x="0" y="6057" width="821" height="1365" frameX="0" frameY="0" frameWidth="821" frameHeight="1365" />
+</TextureAtlas>

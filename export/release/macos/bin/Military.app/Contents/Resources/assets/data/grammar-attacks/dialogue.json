@@ -1,0 +1,123 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "cramar",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hi Gren wanna go to Wendys together?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gren",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wendys suck, lets go to mcdonald instead"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yea sure-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WAIT"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gren",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "what????"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i seen for a second that stupid bf"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gren",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "BF!? its impossible we both defeated him.... along with all the Cramar mod team"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "hey im right here"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "cramar-angry",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "do you just keep tormeting us only cuz the player wants it!?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "there goes the fourth wall btw yes"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "i want to sing"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "gren."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "did you actually kill bf or you just rapbattled with him?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gren",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok ya know what lets end this here and now"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "cramar-angry",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "guess im going to use my ruler again"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "fuck"
+		}
+	]
+}

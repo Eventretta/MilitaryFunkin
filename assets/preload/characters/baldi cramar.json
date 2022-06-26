@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 16,
+			"anim": "idle",
+			"indices": [],
+			"name": "Og Cramar Idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Og Cramar Left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Og Cramar Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Og Cramar Up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Og Cramar Right"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/cramaroriginal_lmao",
+	"position": [
+		-230,
+		0
+	],
+	"healthicon": "cramargrammar",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		65,
+		85
+	],
+	"camera_position": [
+		-180,
+		-40
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

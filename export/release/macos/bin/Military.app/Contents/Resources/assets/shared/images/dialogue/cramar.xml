@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Cramar happy_ASSets_lmao.png">
+<SubTexture name="Cramar Idle thing0000" x="0" y="0" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar Idle thing0001" x="381" y="0" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar Idle thing0002" x="762" y="0" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar lefty0000" x="1143" y="0" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar lefty0001" x="0" y="753" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar lefty0002" x="381" y="753" width="381" height="753" frameX="0" frameY="0" frameWidth="381" frameHeight="753" />
+<SubTexture name="Cramar right0000" x="762" y="753" width="605" height="753" frameX="0" frameY="0" frameWidth="605" frameHeight="753" />
+<SubTexture name="Cramar right0001" x="1367" y="753" width="605" height="753" frameX="0" frameY="0" frameWidth="605" frameHeight="753" />
+<SubTexture name="Cramar right0002" x="0" y="1506" width="605" height="753" frameX="0" frameY="0" frameWidth="605" frameHeight="753" />
+<SubTexture name="Cramar right0003" x="605" y="1506" width="605" height="753" frameX="0" frameY="0" frameWidth="605" frameHeight="753" />
+<SubTexture name="Cramar Up lol0000" x="1210" y="1506" width="443" height="815" frameX="0" frameY="0" frameWidth="443" frameHeight="815" />
+<SubTexture name="Cramar Up lol0001" x="1653" y="1506" width="443" height="815" frameX="0" frameY="0" frameWidth="443" frameHeight="815" />
+<SubTexture name="Cramar Up lol0002" x="0" y="2321" width="443" height="815" frameX="0" frameY="0" frameWidth="443" frameHeight="815" />
+<SubTexture name="whatyouknowaboutrollingdowninthedeep0000" x="443" y="2321" width="521" height="753" frameX="0" frameY="0" frameWidth="521" frameHeight="753" />
+<SubTexture name="whatyouknowaboutrollingdowninthedeep0001" x="964" y="2321" width="521" height="753" frameX="0" frameY="0" frameWidth="521" frameHeight="753" />
+<SubTexture name="whatyouknowaboutrollingdowninthedeep0002" x="1485" y="2321" width="521" height="753" frameX="0" frameY="0" frameWidth="521" frameHeight="753" />
+</TextureAtlas>

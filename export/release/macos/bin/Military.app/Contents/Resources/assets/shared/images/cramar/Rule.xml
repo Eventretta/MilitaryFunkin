@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Rule.png">
+	<!-- Created with Adobe Animate version 22.0.4.185 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SPACE!0000" x="0" y="0" width="440" height="252" frameX="-76" frameY="0" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0001" x="440" y="0" width="458" height="186" frameX="-97" frameY="-77" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0002" x="898" y="0" width="469" height="168" frameX="-107" frameY="-99" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0003" x="1367" y="0" width="598" height="180" frameX="-34" frameY="-101" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0004" x="0" y="252" width="651" height="175" frameX="0" frameY="-99" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0005" x="651" y="252" width="651" height="176" frameX="0" frameY="-98" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0006" x="651" y="252" width="651" height="176" frameX="0" frameY="-98" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0007" x="1302" y="252" width="468" height="168" frameX="-106" frameY="-98" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0008" x="1302" y="252" width="468" height="168" frameX="-106" frameY="-98" frameWidth="651" frameHeight="281"/>
+	<SubTexture name="SPACE!0009" x="1302" y="252" width="468" height="168" frameX="-106" frameY="-98" frameWidth="651" frameHeight="281"/>
+</TextureAtlas>

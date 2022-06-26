@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": null,
+		"player1": "bf",
+		"player2": "militar",
+		"player3": null,
+		"events": [
+			[
+				73456.7307692307,
+				[
+					[
+						"Lights Shut Off",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 130,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "tanks-and-raps"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"songs": [
+		[
+			"encounter",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"virus.exe",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": true,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "error 409",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

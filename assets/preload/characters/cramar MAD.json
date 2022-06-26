@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 30,
+			"anim": "idle",
+			"indices": [],
+			"name": "Cram-rule Idle"
+		},
+		{
+			"offsets": [
+				50,
+				-20
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left cool"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Cramar down"
+		},
+		{
+			"offsets": [
+				50,
+				70
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up"
+		},
+		{
+			"offsets": [
+				45,
+				9
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right Rule"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Cramar_Military",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "cramar-mad",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 3.4,
+	"scale": 1
+}

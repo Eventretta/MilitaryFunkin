@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "Cramar Idle thing"
+		},
+		{
+			"offsets": [
+				-1,
+				10
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Cramar lefty"
+		},
+		{
+			"offsets": [
+				40,
+				23
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "whatyouknowaboutrollingdowninthedeep"
+		},
+		{
+			"offsets": [
+				0,
+				80
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Cramar Up lol"
+		},
+		{
+			"offsets": [
+				-70,
+				9
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Cramar right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Cramar happy_ASSets_lmao",
+	"position": [
+		20,
+		20
+	],
+	"healthicon": "cramar",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

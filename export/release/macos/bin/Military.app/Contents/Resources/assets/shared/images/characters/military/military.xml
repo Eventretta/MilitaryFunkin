@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Militar Man.png"><SubTexture name="Militar Man DOWN0000" x="0" y="0" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man DOWN0001" x="572" y="0" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man DOWN0002" x="1144" y="0" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man DOWN0003" x="1716" y="0" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man IDLE0000" x="0" y="568" width="428" height="568" frameX="0" frameY="0" frameWidth="428" frameHeight="568" />
+<SubTexture name="Militar Man IDLE0001" x="428" y="568" width="428" height="568" frameX="0" frameY="0" frameWidth="428" frameHeight="568" />
+<SubTexture name="Militar Man IDLE0002" x="856" y="568" width="428" height="568" frameX="0" frameY="0" frameWidth="428" frameHeight="568" />
+<SubTexture name="Militar Man IDLE0003" x="1284" y="568" width="428" height="568" frameX="0" frameY="0" frameWidth="428" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0000" x="0" y="1136" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0001" x="704" y="1136" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0002" x="1408" y="1136" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0003" x="2112" y="1136" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0004" x="0" y="1704" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man LEFT0005" x="704" y="1704" width="704" height="568" frameX="0" frameY="0" frameWidth="704" frameHeight="568" />
+<SubTexture name="Militar Man RIGHT0000" x="1408" y="1704" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man RIGHT0001" x="1980" y="1704" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man RIGHT0002" x="0" y="2272" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man RIGHT0003" x="572" y="2272" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man RIGHT0004" x="1144" y="2272" width="572" height="568" frameX="0" frameY="0" frameWidth="572" frameHeight="568" />
+<SubTexture name="Militar Man UP0000" x="1716" y="2272" width="572" height="874" frameX="0" frameY="0" frameWidth="572" frameHeight="874" />
+<SubTexture name="Militar Man UP0001" x="0" y="3146" width="572" height="874" frameX="0" frameY="0" frameWidth="572" frameHeight="874" />
+<SubTexture name="Militar Man UP0002" x="572" y="3146" width="572" height="874" frameX="0" frameY="0" frameWidth="572" frameHeight="874" />
+<SubTexture name="Militar Man UP0003" x="1144" y="3146" width="572" height="874" frameX="0" frameY="0" frameWidth="572" frameHeight="874" />
+<SubTexture name="Militar Man UP0004" x="1716" y="3146" width="572" height="874" frameX="0" frameY="0" frameWidth="572" frameHeight="874" />
+</TextureAtlas>

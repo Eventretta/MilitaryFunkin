@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Hmmmm.... This place looks not good, why you want to go there?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Honsetly... Why are you scared? I am a demon so...."
+		},
+		{
+			"speed": 0.1,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "So.... If soemone tells to leave, i will....."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf-uff",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ok.... I guess.... But don't talk about that thing with the knife..."
+		},
+		{
+			"speed": 0.06,
+			"portrait": "null",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "....."
+		},
+		{
+			"speed": 0.055,
+			"portrait": "militarMan",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey, litte guys! Please leave! This is not a playground!"
+		},
+		{
+			"speed": 0.00500000000000001,
+			"portrait": "gf",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "AAAAAAAAAAAAAAAA-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It's just you"
+		},
+		{
+			"speed": 0.085,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "We will not leave.... unless you beat BF in a rap battle...!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Ok, let's do this!"
+		}
+	]
+}

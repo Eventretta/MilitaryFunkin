@@ -1,0 +1,31 @@
+{
+	"songs": [
+		[
+			"newgrounds-stars",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Normal",
+	"weekCharacters": [
+		"dad",
+		"tankman",
+		"gf"
+	],
+	"storyName": "tankman week",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "week7",
+	"startUnlocked": false
+}

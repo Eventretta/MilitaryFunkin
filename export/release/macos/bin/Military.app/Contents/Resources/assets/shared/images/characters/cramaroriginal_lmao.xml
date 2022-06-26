@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="cramaroriginal_lmao.png">
+<SubTexture name="Og Cramar Idle0000" x="0" y="0" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Idle0001" x="1107" y="0" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Idle0002" x="2214" y="0" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Down0000" x="3321" y="0" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Down0001" x="0" y="837" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Down0002" x="1107" y="837" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Left0000" x="2214" y="837" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Left0001" x="3321" y="837" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Right0000" x="0" y="1674" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Right0001" x="1107" y="1674" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Up0000" x="2214" y="1674" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Up0001" x="3321" y="1674" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Up0002" x="0" y="2511" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Head Turn0000" x="1107" y="2511" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Head Turn0001" x="2214" y="2511" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+<SubTexture name="Og Cramar Head Turn0002" x="3321" y="2511" width="1107" height="837" frameX="0" frameY="0" frameWidth="1107" frameHeight="837" />
+</TextureAtlas>

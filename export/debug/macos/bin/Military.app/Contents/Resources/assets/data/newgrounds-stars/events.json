@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": "warzone",
+		"player1": "tankman",
+		"player2": "dad",
+		"player3": null,
+		"events": [
+			[
+				23625,
+				[
+					[
+						"Play Animation",
+						"ugh",
+						"bf"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 160,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "newgrounds stars"
+	}
+}

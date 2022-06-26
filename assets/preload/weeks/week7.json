@@ -1,0 +1,49 @@
+   {
+	"songs": [
+		[
+			"tanks-and-raps",
+			"militar",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"military-speaker",
+			"militar",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"explosion",
+			"militar",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "military",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

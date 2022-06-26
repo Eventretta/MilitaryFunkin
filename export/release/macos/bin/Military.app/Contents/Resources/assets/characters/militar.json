@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Militar Man IDLE"
+		},
+		{
+			"offsets": [
+				170,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Militar Man LEFT"
+		},
+		{
+			"offsets": [
+				90,
+				-28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Militar Man DOWN"
+		},
+		{
+			"offsets": [
+				50,
+				270
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Militar Man UP"
+		},
+		{
+			"offsets": [
+				40,
+				-50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Militar Man RIGHT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/military/military",
+	"position": [
+		0,
+		140
+	],
+	"healthicon": "militar",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		-10,
+		0
+	],
+	"sing_duration": 4.1,
+	"scale": 1
+}

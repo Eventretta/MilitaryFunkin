@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="screenBroked.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="screen broke0000" x="0" y="0" width="938" height="560"/>
+	<SubTexture name="screen broke0001" x="0" y="560" width="938" height="560"/>
+	<SubTexture name="screen broke0002" x="0" y="1120" width="938" height="560"/>
+</TextureAtlas>
