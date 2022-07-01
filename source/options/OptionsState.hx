@@ -14,6 +14,11 @@ import flixel.util.FlxColor;
 import lime.utils.Assets;
 import flixel.FlxSubState;
 import flash.text.TextField;
+// STUFF FOR SAVEDATA EXPORTING
+import openfl.net.FileReference;
+import openfl.events.Event;
+import openfl.events.IOErrorEvent;
+
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.util.FlxSave;
@@ -30,11 +35,16 @@ using StringTools;
 class OptionsState extends MusicBeatState
 {
 	public static var isFromPause:Bool = false;
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay','Audio & Video'];
+	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay','Audio & Video','Export Savedata'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
 	public var versionShit:FlxText;
+	var _file:FileReference;
+
+	public var txtThingie:Int = 0;
+	public var txtArrayThingie:Array<String> = ['Import','Export'];
+	public var saveTxt:Alphabet;
 
 	function openSelectedSubstate(label:String) {
 		switch(label) {
@@ -50,11 +60,50 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				LoadingState.loadAndSwitchState(new options.NoteOffsetState());
+			case 'Export Savedata':
+						_file = new FileReference();
+						_file.addEventListener(Event.COMPLETE, onSaveComplete);
+						_file.addEventListener(Event.CANCEL, onSaveCancel);
+						_file.addEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+						_file.save(FlxG.save.data, "savedata_" + Date.now().getHours() + ":" + Date.now().getMinutes() + ',' + Date.now().getSeconds() + ".flixelsave");
 		}
 	}
 
 	var selectorLeft:Alphabet;
 	var selectorRight:Alphabet;
+
+	function onSaveComplete(_):Void
+		{
+			_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+			_file.removeEventListener(Event.CANCEL, onSaveCancel);
+			_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+			_file = null;
+			trace('complete');
+		}
+	
+		/**
+		 * Called when the save file dialog is cancelled.
+		 */
+		function onSaveCancel(_):Void
+		{
+			_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+			_file.removeEventListener(Event.CANCEL, onSaveCancel);
+			_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+			_file = null;
+			trace('cancelled');
+		}
+	
+		/**
+		 * Called if there is an error while saving the gameplay recording.
+		 */
+		function onSaveError(_):Void
+		{
+			_file.removeEventListener(Event.COMPLETE, onSaveComplete);
+			_file.removeEventListener(Event.CANCEL, onSaveCancel);
+			_file.removeEventListener(IOErrorEvent.IO_ERROR, onSaveError);
+			_file = null;
+			trace('error');
+		}
 
 	override function create() {
 		#if desktop
@@ -111,6 +160,7 @@ class OptionsState extends MusicBeatState
 			if (keys[0]) FlxG.sound.volume -= 0.1;
 			else if (keys[1]) FlxG.sound.volume += 0.1;
 		}
+
 		super.update(elapsed);
 
 		if (controls.UI_UP_P) {
