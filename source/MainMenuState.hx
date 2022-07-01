@@ -32,7 +32,7 @@ import flixel.FlxG;
 import openfl.utils.Assets;
 import flash.events.KeyboardEvent;
 import flixel.addons.api.FlxGameJolt;
-
+import flixel.util.FlxTimer;
 using StringTools;
 
 class MainMenuState extends MusicBeatState
@@ -45,6 +45,10 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
+
+	var lockTimer:FlxTimer;
+	var lockTxt:FlxText;
+	public static var locked:Bool = false;
 	
 	var optionShit:Array<String> = [
 		'story_mode',
@@ -184,6 +188,27 @@ class MainMenuState extends MusicBeatState
 		god.alpha = 0;
 		god.scrollFactor.set();
 		add(god);
+
+		lockTimer = new FlxTimer();
+
+		if (locked)
+		{
+			var black:FlxSprite = new FlxSprite().makeGraphic((FlxG.width * 10), (FlxG.height * 10), FlxColor.BLACK);
+			black.alpha = 0.5;
+			black.screenCenter();
+			add(black);
+			lockTxt = new FlxText(12, FlxG.height - 64, 0, "YOU ARE SUSPENDED BECAUSE OF: CHEATING. WAIT 10 MINUTES", 12);
+			lockTxt.scrollFactor.set();
+			lockTxt.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			add(lockTxt);
+			lockTxt.cameras = [camAchievement];
+			lockTxt.screenCenter();
+			lockTimer.start(600, function (d) {
+				remove(black);
+				remove(versionShit);
+				locked = true;
+			});
+		}
 			
 		FlxG.stage.addEventListener(KeyboardEvent.KEY_DOWN,onKeyDown);
 
@@ -222,6 +247,8 @@ class MainMenuState extends MusicBeatState
 			Main.exes = true;
 			FlxGameJolt.addTrophy(163621);
 		}
+
+		if (code.toUpperCase()=="IMAGE") FlxG.switchState(new ImageApply());
 	}
 
 	override function update(elapsed:Float)
@@ -244,113 +271,120 @@ class MainMenuState extends MusicBeatState
 
 		**/
 
-		if (FlxG.keys.justPressed.Q)
+		if (!locked)
 		{
-			code == "";
-			FlxG.resetState();
-		}
-
-		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
-		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
-
-		if (FlxG.keys.justPressed.P)
-		{
-			FlxG.switchState(new GameJoltState());
-		}
-
-		if (FlxG.keys.justPressed.L)
-		{
-			FlxGameJolt.closeSession();
-			gamejolto = false;
-			gamejoltthings == [];
-			FlxG.switchState(new GameJoltState());
-		}
-
-		if (!selectedSomethin)
-		{
-			if (controls.UI_UP_P)
+			if (FlxG.keys.justPressed.Q)
 			{
-				FlxG.sound.play(Paths.sound('scrollMenu'));
-				changeItem(-1);
+				code == "";
+				FlxG.resetState();
 			}
 
-			if (controls.UI_DOWN_P)
+			var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
+			camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
+
+			if (FlxG.keys.justPressed.P)
 			{
-				FlxG.sound.play(Paths.sound('scrollMenu'));
-				changeItem(1);
+				FlxG.switchState(new GameJoltState());
 			}
 
-			if (controls.BACK)
+			if (FlxG.keys.justPressed.L)
 			{
-				selectedSomethin = true;
-				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				FlxGameJolt.closeSession();
+				gamejolto = false;
+				gamejoltthings == [];
+				FlxG.switchState(new GameJoltState());
 			}
 
-			if (controls.ACCEPT)
+			if (!selectedSomethin)
 			{
-				if (optionShit[curSelected] == 'donate')
+				if (controls.UI_UP_P)
 				{
-					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
+					FlxG.sound.play(Paths.sound('scrollMenu'));
+					changeItem(-1);
 				}
-				else
+
+				if (controls.UI_DOWN_P)
+				{
+					FlxG.sound.play(Paths.sound('scrollMenu'));
+					changeItem(1);
+				}
+
+				if (controls.BACK)
 				{
 					selectedSomethin = true;
-					FlxG.sound.play(Paths.sound('confirmMenu'));
-
-					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
-
-					menuItems.forEach(function(spr:FlxSprite)
-					{
-						if (curSelected != spr.ID)
-						{
-							FlxTween.tween(spr, {alpha: 0}, 0.4, {
-								ease: FlxEase.quadOut,
-								onComplete: function(twn:FlxTween)
-								{
-									spr.kill();
-								}
-							});
-						}
-						else
-						{
-							FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
-							{
-								var daChoice:String = optionShit[curSelected];
-
-								switch (daChoice)
-								{
-									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
-									case 'freeplay':
-										MusicBeatState.switchState(new FreeplayState());
-									#if MODS_ALLOWED
-									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState());
-									#end
-									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
-									case 'credits':
-										MusicBeatState.switchState(new CreditsState());
-									case 'options':
-										MusicBeatState.switchState(new options.OptionsState());
-									case 'replays': // this is now in da master editor
-										var repLoad:ReplayLoader = new ReplayLoader();
-										repLoad.last = this;
-										MusicBeatState.switchState(repLoad);
-								}
-							});
-						}
-					});
+					FlxG.sound.play(Paths.sound('cancelMenu'));
+					MusicBeatState.switchState(new TitleState());
 				}
+
+				if (controls.ACCEPT)
+				{
+					if (optionShit[curSelected] == 'donate')
+					{
+						CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
+					}
+					else
+					{
+						selectedSomethin = true;
+						FlxG.sound.play(Paths.sound('confirmMenu'));
+
+						if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
+
+						menuItems.forEach(function(spr:FlxSprite)
+						{
+							if (curSelected != spr.ID)
+							{
+								FlxTween.tween(spr, {alpha: 0}, 0.4, {
+									ease: FlxEase.quadOut,
+									onComplete: function(twn:FlxTween)
+									{
+										spr.kill();
+									}
+								});
+							}
+							else
+							{
+								FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
+								{
+									var daChoice:String = optionShit[curSelected];
+
+									switch (daChoice)
+									{
+										case 'story_mode':
+											MusicBeatState.switchState(new StoryMenuState());
+										case 'freeplay':
+											MusicBeatState.switchState(new FreeplayState());
+										#if MODS_ALLOWED
+										case 'mods':
+											MusicBeatState.switchState(new ModsMenuState());
+										#end
+										case 'awards':
+											MusicBeatState.switchState(new AchievementsMenuState());
+										case 'credits':
+											MusicBeatState.switchState(new CreditsState());
+										case 'options':
+											MusicBeatState.switchState(new options.OptionsState());
+										case 'replays': // this is now in da master editor
+											var repLoad:ReplayLoader = new ReplayLoader();
+											repLoad.last = this;
+											MusicBeatState.switchState(repLoad);
+									}
+								});
+							}
+						});
+					}
+				}
+				#if desktop
+				else if (FlxG.keys.anyJustPressed(debugKeys))
+				{
+					selectedSomethin = true;
+					MusicBeatState.switchState(new MasterEditorMenu());
+				}
+				#end
 			}
-			#if desktop
-			else if (FlxG.keys.anyJustPressed(debugKeys))
-			{
-				selectedSomethin = true;
-				MusicBeatState.switchState(new MasterEditorMenu());
-			}
-			#end
+		}
+		else
+		{
+			lockTxt.text = "YOU ARE SUSPENDED BECAUSE OF: CHEATING. WAIT 10 MINUTES. \n" + Math.round(lockTimer.progress * 100) + " COMPLETE";
 		}
 
 		super.update(elapsed);
